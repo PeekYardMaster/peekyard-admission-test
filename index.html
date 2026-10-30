@@ -3,34 +3,40 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Landing page demonstrativa usada exclusivamente para validar o processo de admissão da Peekyard.">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&display=swap">
-  <title>Projeto Farol — Teste de admissão Peekyard</title>
+  <meta name="description" content="Projeto Farol: teste público, estático e sem rastreamento para homologação da admissão Peekyard.">
+  <meta name="color-scheme" content="light">
+  <title>Projeto Farol — Homologação de admissão da Peekyard</title>
   <style>
-    :root { color-scheme: light; font-family: "DM Sans", system-ui, sans-serif; background: #f8f9f6; color: #1d2b31; }
+    :root { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; background: #f7f9f8; color: #20313b; }
     * { box-sizing: border-box; }
     body { margin: 0; min-height: 100vh; display: grid; place-items: center; padding: 24px; }
-    main { width: min(100%, 700px); padding: clamp(24px, 5vw, 64px); background: #fff; border: 1px solid #e0e6e0; border-radius: 26px; box-shadow: 0 18px 50px #192d2612; }
-    .eyebrow { font-size: 13px; font-weight: 700; letter-spacing: .11em; text-transform: uppercase; color: #6645c6; }
-    h1 { font-size: clamp(36px, 7vw, 58px); line-height: 1.13; letter-spacing: -.04em; margin: 20px 0; }
-    p { line-height: 1.8; color: #536267; font-size: 17px; }
-    .notice { background: #e9f8e1; padding: 15px 20px; border-radius: 12px; font-size: 14px; margin: 26px 0; }
-    a { display: inline-block; margin-top: 8px; padding: 13px 20px; border-radius: 999px; background: #24323a; color: white; font-weight: 700; text-decoration: none; }
-    footer { font-size: 13px; color: #63716c; margin-top: 28px; }
+    main { width: min(100%, 720px); padding: clamp(24px, 6vw, 58px); background: #fff; border: 1px solid #d9e3df; border-radius: 24px; }
+    .eyebrow { font-size: 13px; font-weight: 700; letter-spacing: .10em; text-transform: uppercase; color: #5040a0; }
+    h1 { font-size: clamp(36px, 7vw, 54px); line-height: 1.12; margin: 18px 0; letter-spacing: -.03em; }
+    h2 { font-size: 22px; margin: 28px 0 10px; }
+    p, li { font-size: 17px; line-height: 1.7; color: #43525a; }
+    .notice { background: #eef6ed; border-radius: 12px; padding: 14px 18px; }
+    a { display: inline-block; margin-top: 8px; padding: 12px 18px; border-radius: 100px; background: #20313b; color: #fff; text-decoration: none; font-weight: 700; }
+    a:focus-visible { outline: 3px solid #6655bd; outline-offset: 4px; }
+    footer { font-size: 13px; margin-top: 28px; color: #596b65; }
   </style>
 </head>
 <body>
   <main>
-    <div class="eyebrow">Demonstração · Peekyard Admissions</div>
+    <div class="eyebrow">Homologação de admissão · Peekyard</div>
     <h1>Projeto Farol</h1>
-    <p>Um experimento para validar como ideias independentes podem contar sua história em uma landing page simples, acessível e transparente.</p>
-    <p>Esta página é um exemplo técnico. Não representa um serviço ou produto disponível para contratação.</p>
-    <div class="notice">Ambiente de teste. Nenhuma página foi publicada na vitrine peekyard.com.</div>
-    <a href="https://github.com/PeekYardMaster" rel="noopener noreferrer">Contato: perfil GitHub do responsável</a>
-    <footer id="status">Página de demonstração.</footer>
+    <p>Esta página permite testar, de maneira observável, o processo de inscrição de projetos na Peekyard: envio do formulário, triagem pública, avaliação institucional consultiva e elaboração de um parecer privado para revisão humana.</p>
+    <p class="notice">Ambiente de demonstração. Este projeto não oferece serviços, não recebe inscrições próprias e não é uma publicação na vitrine Peekyard.</p>
+    <h2>O que está sendo validado?</h2>
+    <ul>
+      <li>Uma proposta explicada com clareza, em uma página HTML pública e independente.</li>
+      <li>Uma origem versionada em Git e passível de verificação por commit.</li>
+      <li>Uma decisão humana posterior às análises automatizadas, sem aprovação implícita.</li>
+    </ul>
+    <h2>Privacidade e dependências</h2>
+    <p>A página usa apenas HTML e CSS próprios e fontes do sistema. Não solicita dados pessoais, não utiliza cookies, scripts, serviços de analytics, recursos remotos ou formulários. O único link de saída é o contato público do responsável no GitHub.</p>
+    <a href="https://github.com/PeekYardMaster" rel="noopener noreferrer">Contato público: perfil GitHub</a>
+    <footer>Projeto técnico de homologação · segunda versão independente de recursos externos.</footer>
   </main>
-  <script>
-    document.getElementById("status").textContent = "Página de demonstração · carregada com sucesso";
-  </script>
 </body>
 </html>
